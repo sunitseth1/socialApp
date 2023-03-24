@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+        margin: auto;
+        width: 70%;
+        height: 100%;
+        background-image: url('https://blog.aspiration.marketing/hubfs/outstanding-social-media-campaigns-5f60d3e4bb13b-png.png');
+        padding: 80px;
+        margin-top: 100px;
+        }
+        .inner{
+            margin: auto;
+        background-color: white;
+        width: 450px;
+        height: 450px;
+        overflow: auto;
+        border-radius: 15px;
+       
+        }
+        .select{
+        margin-top: 80px;
+        margin-left:30px;
+        border-radius: 5%;
+    
+        }
+        img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 200px;
+        /* position:none; */
+        /* display: none; */
+        
+        
+       }
+       .namepalte{
+        background-color: #e7e3e3;
+        position:absolute;
+        width: 450px;
+        height: 70px;
+        /* border-radius: 5%; */
+        border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+        
+        /* text-align: center; */
+       }
+       button{
+        background-color: white;
+     border: none;
+    color:none;
+    width: 400px;
+        height: 4px;
+        
+ 
+       }
+       /* .name{
+        margin-left: 5px;
+      
+       } */
+       h1{
+        margin-left: 100px;
+        border-radius: 30%;
+       }
+       h3{
+        margin-top: -30px;
+        margin-left: 30px;
+        
+       }
+       ::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-block-end:4px ;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(232, 194, 194); 
+  border-radius: 10px;
+ margin-top: -100px;
+}
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #f0eded; 
+} */
+    </style>
+</head>
+<body>
+    <div class="outer">
+   <div class="inner">
+    <div class="namepalte">
+     <h1>Select an Account</h1>
+    </div>
+    <div class="select">
+
+        <form action="profile1/profile.html">
+        <button>
+      <div  class="name"> 
+        <img id="img1"> 
+        <h3 id="name1"></h3></div>
+      </button>
+     </form>
+
+      <hr style="width:90%;">
+       
+      <!-- <form action="profile1/profile.html"> -->
+        <button>
+            <div class="name">
+                <img id="img2" >
+                <h3 id="name2"></h3></div>
+            </button>
+            <hr style="width:90%;">
+        <button>
+       <!-- </form> -->
+
+       <!-- <form action="profile1/profile.html"> -->
+            <div class="name">
+                <img id="img3" >
+                <h3  id="name3"></h3></div>
+            </button>
+            <!-- </form> -->
+
+            <hr style="width:90%;">
+
+            <!-- <form action="profile1/profile.html"> -->
+            <button>
+                <div class="name">
+                    <img id="img4" alt="">
+                    <h3 id="name4"></h3></div>
+                </button>
+                <!-- </form> -->
+
+                <hr style="width:90%;">
+           
+                <!-- <form action="profile1/profile.html"> -->
+                <button>
+                    <div class="name">
+                        <img id="img5"  alt="">
+                        <h3 id="name5"></h3></div>
+                    </button>
+                <!-- </form> -->
+
+                    <hr style="width:90%;">
+
+                    <!-- <form action="profile1/profile.html"> -->
+                    <button>
+                  <div class="name">
+                    <img id="img6"  alt="">
+                    <h3 id="name6"></h3></div>
+                  </button>
+              <!-- </form> -->
+                  <hr style="width:90%;">
+
+                  <!-- <form action="profile1/profile.html"> -->
+                        <button>
+                            <div class="name">
+                                <img id="img7" >
+                                <h3 id="name7"></h3></div>
+                     </button>
+                    <!-- </form> -->
+                     <hr style="width:90%;">
+
+                     <!-- <form action="profile1/profile.html"> -->
+                     <button>
+                        <div class="name">
+                            <img id="img8" >
+                            <h3 id="name8"></h3></div>
+                 </button>
+                 <!-- </form> -->
+
+                 <hr style="width:90%;">
+
+              <!-- <form action="profile1/profile.html"> -->
+                 <button>
+                    <div class="name">
+                        <img id="img9" >
+                        <h3 id="name9"></h3></div>
+                  </button>
+             <!-- </form> -->
+
+             <hr style="width:90%;">
+
+           <!-- <form action="profile1/profile.html"> -->
+             <button>
+                <div class="name">
+                    <img id="img10" >
+                    <h3 id="name10"></h3></div>
+               </button>
+              <!-- </form> -->
+
+    </div>
+   </div>
+</div>
+</body>
+<script>
+           let img1=document.getElementById('img1');
+           let img2=document.getElementById('img2');
+           let img3=document.getElementById('img3');
+           let img4=document.getElementById('img4');
+           let img5=document.getElementById('img5');
+           let img6=document.getElementById('img6');
+           let img7=document.getElementById('img7');
+           let img8=document.getElementById('img8');
+           let img9=document.getElementById('img9');
+           let img10=document.getElementById('img10');
+     
+     
+
+    const myPromise=fetch("https://panorbit.in/api/users.json");
+    myPromise.then(data=>{
+        return data.json()
+    })
+    .then(actualdata=>{
+        console.log(actualdata)
+        let num=actualdata;
+        
+        document.getElementById("name1").innerHTML=num.users[0].name;
+        document.getElementById("name2").innerHTML=num.users[1].name;
+        document.getElementById("name3").innerHTML=num.users[2].name;
+        document.getElementById("name4").innerHTML=num.users[3].name;
+        document.getElementById("name5").innerHTML=num.users[4].name;
+        document.getElementById("name6").innerHTML=num.users[5].name;
+        document.getElementById("name7").innerHTML=num.users[6].name;
+        document.getElementById("name8").innerHTML=num.users[7].name;
+        document.getElementById("name9").innerHTML=num.users[8].name;
+        document.getElementById("name10").innerHTML=num.users[9].name;
+
+        img1.src=actualdata.users[0].profilepicture;
+        img2.src=actualdata.users[1].profilepicture;
+        img3.src=actualdata.users[2].profilepicture;
+        img4.src=actualdata.users[3].profilepicture;
+        img5.src=actualdata.users[4].profilepicture;
+        img6.src=actualdata.users[5].profilepicture;
+        img7.src=actualdata.users[6].profilepicture;
+        img8.src=actualdata.users[7].profilepicture;
+        img9.src=actualdata.users[8].profilepicture;
+        img10.src=actualdata.users[9].profilepicture;
+
+       
+
+     
+
+
+    })
+   
+</script>
+</html>

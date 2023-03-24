@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .display{
+      display: flex;
+     max-width: 1000px;
+ padding-left: 100px;
+ padding-right: 100px;
+     height: 650px;
+     margin: auto;
+      margin-top: 4%;
+      background-color:white;
+    }
+    .option{
+      display:block;
+      background-color:rgb(109, 109, 225);
+      width: 250px;
+     border-radius: 3%;
+      height: 650px;
+      margin-left: -10%;
+    }
+    .option1{
+      display: block;
+      width: 200px;
+      margin-left: 50px;
+      margin-top:68% ;
+      /* color: w; */
+    }
+    .button1{
+      background-color: rgb(109, 109, 225);
+          border: none;
+          
+    }
+    .profile_add{
+      
+      margin-top: 10px;
+      margin-left: 100px;
+      background-color:white;
+      width: 110px;
+      height: 60px;
+    }
+    .login_option{
+      background-color: white;
+      margin-top: 10px;
+   margin-left: 40%;
+   width: 250px;
+      height: 48px;
+      border: none;
+      
+    }
+    .button2{
+      width: 250px;
+      height: 48px;
+    }
+    .about1{
+      width:300px ;
+      height: 400;
+      margin-left: -86%;
+      margin-top: 85px;
+      text-align: center;
+      font-size: 10px;
+      background-color: white;
+    }
+
+    .address1{
+      width:320px ;
+      height: 200px;
+      margin-left: 110%;
+      margin-top: -580px;
+      font-size: 10px;
+      background-color: white;
+    }
+    .image2{
+      width:520px ;
+      height:300px;
+      margin-left: 40.5%;
+      margin-top: 10px;
+    }
+    .chat1{
+      width:250px ;
+      height: 30px;
+      margin-left: 210%;
+      margin-top: 24px;
+      border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          border:none;
+         background-color: rgb(129, 129, 235);
+          
+          
+    }
+    .image1{
+    
+     border-radius: 50%;
+     margin-right: 70px;
+     margin-left: 80px;
+     width: 120px;
+     height: 120px; 
+     margin-left: 25%;
+
+    }
+    .image3{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 90%;
+    }
+    .log_name{
+     margin-top: -12%;
+     font-size: 14px;
+    }
+    .login_option1{
+      width: 250px;
+      height: 320px;
+      margin-left: -280px;
+      position:relative;
+      background-color: rgb(240, 234, 245);
+      border-radius: 30px;
+      margin-top: 60px;
+      overflow:auto;
+      display: none;
+      border: 2px solid rgb(130, 115, 244);
+      /* border-color: rgb(212, 30, 30);
+      border-radius: 10px; */
+    }
+.chat_up1{
+  width: 250px;
+  height: 350px;
+  margin-left: 600px;
+  background-color: white;
+  position:relative;
+  margin-top: -390px;
+  border-radius: 30px;
+  overflow: auto;
+  border: 2px solid rgb(130, 115, 244);
+  display: none;
+
+}.image5{
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-left: 50px;
+}
+.lena1{
+  margin-left: 27px;
+  font-size: 20px;
+}
+.lena2{
+  font-size: 15px;
+  margin-left: 38px;
+}
+.image4{
+  width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: -210px;
+      margin-top: 6px;
+}
+.chatup_button{
+  width: 200px;
+  height: 36px;
+  background-color: white;
+  border: none;
+  margin-left: -220px;
+}
+.img4{
+  width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin-left: -190px;
+      text-align:unset;
+      /* margin-top: -100%; */
+      
+}
+h5{
+  font-size: 11px;
+  margin-top: -17px;
+  text-align:center;
+  margin-left: -8px;
+}
+.chat_up2{
+  font-size: 11px;
+  margin-top: -19px;
+
+}
+.chatsup_button2{
+  width: 220px;
+  height: 280px;
+  margin-left: 320px;
+  margin-top: -286px;
+  background-color: white;
+  position:relative;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: 2px solid rgb(130, 115, 244);
+  display:none;
+}
+.img3{
+  width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: -190px;
+      /* text-align:unset; */
+}
+.name4{
+font-size: 13px;
+margin-top: -26px;
+position:relative;
+
+}
+.button4{
+width: 240px;
+height: 45px;
+margin-left: -15px;
+border: none;
+background-color:rgb(240, 234, 245);
+}
+.singout{
+    width: 100px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgb(138, 96, 229);
+}
+.lineup1{
+font-size: 17px;
+}
+.lineup2{
+font-size: 17px;
+}
+.lineup3{
+  font-size: 17px;
+}
+.lineup4{
+  font-size: 17px;
+}
+.div1{
+  width: 100px;
+  height: 140px;
+  background-color: white;
+  text-align: end;
+}
+.div3{
+  width: 100px;
+  height: 180px;
+  background-color: white;
+  text-align: end;
+}
+.div2{
+  width: 150px;
+  height: 160px;
+  background-color: white;
+  margin-left:35% ;
+  margin-top: -52%;
+  text-align: start;
+}
+.div4{
+  width: 150px;
+  height: 180px;
+  background-color: white;
+  margin-left:35% ;
+  margin-top: -64%;
+  text-align: start;
+}
+.div5{
+  width: 100px;
+  height: 180px;
+  background-color: white;
+  text-align: end;
+}
+.div6{
+  width: 150px;
+  height: 180px;
+  background-color: white;
+  margin-left:35% ;
+  margin-top: -60%;
+  text-align: start;
+}
+.chats_upp{
+  margin-top: -24px;
+  /* margin-left: -20px; */
+
+}
+.chatIm{
+  width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 20px;
+      margin-left: -200px;
+      
+}
+
+.lorem1{
+font-size: 12px;
+width: 150px;
+height: 50px;
+
+}
+.lorem2{
+  font-size: 12px;
+  width: 150px;
+  height: 50px;
+
+}
+.lorem3{
+  font-size: 12px;
+  width: 150px;
+  height: 50px;
+  margin-left:120px ;
+}
+.lorem4{
+  font-size: 12px;
+  width: 150px;
+  height: 50px;
+  margin-left:130px ;
+}
+.lorem5{
+width: 10px;
+background-color: aliceblue;
+}
+.lorem6{
+background-color: rgb(26, 141, 241);
+margin-left: -40px;
+height: 60px;
+border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.lorem7{
+  background-color: aliceblue;
+  height:100px;
+  width: 260px;
+  margin-left: -40px;
+  margin-top: -12px;
+}
+.lorem8{
+  background-color: aliceblue;
+  height:100px;
+  width: 260px;
+  margin-top: -12px;
+  margin-left: -40px;
+}
+.lorem9{
+  background-color: aliceblue;
+  height:40px;
+  width:200;
+  margin-left: -40px;
+  margin-top: -10px;
+
+}
+.home{
+  color: white;
+}
+.chatOn1{
+background-color: rgb(95, 95, 239);
+width: 280px;
+height: 40px;
+margin-left: -40px;
+border-top-right-radius: 10px;
+margin-top: -0px;
+/* text-align:; */
+/* position:absolute; */
+}
+.chatOn2{
+margin-top: -40px;
+margin-left: -30px;
+}
+.home1{
+  color: rgb(218, 220, 222);
+}
+::-webkit-scrollbar {
+       width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-block-end:20px ;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(94, 84, 84); 
+  border-radius: 10px;
+ margin-top: -100px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="display">
+    <div class="option">
+      <div class="option1">
+      <button onclick="HomeProfile" class="button1">
+        <h2 class="home">Profile</h2>
+        </button>
+        <hr style=" color:thistle; margin-right: 30px;">
+
+        <form action="photos.html">
+        <button onclick="HomePosts" class="button1">
+        <h2 class="home1">Posts</h2>
+        </button>
+      </form>
+    
+        <hr style=" color:thistle; margin-right: 30px;">
+    
+        <form action="gallery.html">
+         <button  onclick="Homegallery" class="button1">
+        <h2 class="home1">Gallery</h2>
+        </button>
+      </form>
+    
+        <hr  style=" color:thistle; margin-right: 30px;" >
+    
+        <form action="toDo.html">
+         <button onclick="HometoDo" class="button1">
+        <h2 class="home1">ToDo</h2>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="profile_add"> 
+      <h1 style="font-size: 30px;">Profile</h1>
+    </div>
+
+
+      <button onclick="dropUp()" class="login_option"><img class="image3" src="https://shotkit.com/wp-content/uploads/2021/06/cool-profile-pic-matheus-ferrero.jpeg" alt=""><h4 class="log_name">Clementine Bauch</h4> </button>
+          <ul class="login_option1" id="dropUp">
+        <div class="">
+          <img class="image5" id="data14" src="https://shotkit.com/wp-content/uploads/2021/06/cool-profile-pic-matheus-ferrero.jpeg" alt="">
+          <h1 class="lena1" id="data15">Leanne Graham</h1>
+          <h3 class="lena2" id="data16">Sincare@april.biz</h3>
+
+          <button id="dataChange1" class="button4">
+            <img id="21" src="" alt="" class="img3">
+            <h1 id="26" class="name4"></h1>
+          </button>
+<hr>
+    <button id="dataChange2"  class="button4">
+        <img id="22" src="" alt="" class="img3">
+        <h1 id="27" class="name4"></h1>
+      </button>
+<hr>
+    <button id="dataChange3" class="button4">
+        <img id="23" src="" alt="" class="img3">
+        <h1 id="28" class="name4"></h1>
+      </button>
+<hr>
+    <button id="dataChange4" class="button4">
+        <img id="24" src="" alt="" class="img3">
+        <h1 id="29" class="name4"></h1>
+      </button>
+<hr>
+    <button id="dataChange5" class="button4">
+        <img id="25" src="" alt="" class="img3">
+        <h1 id="30" class="name4"></h1>
+      </button>
+
+        <form action="/index.html">
+        <button id="" class="singout">Sing out</button>
+      </form>
+    </div>
+      </ul>
+
+      
+
+    <div class="about1">
+      <img class="image1" id="data1"  src="https://shotkit.com/wp-content/uploads/2021/06/cool-profile-pic-matheus-ferrero.jpeg" alt="">
+  <div class="">
+  <h1 id="data2">Leanne Graham</h1>
+  <div class="div1">
+    <h1 class="lineup1">Username : </h1>
+    <h1 class="lineup1" >e-mail :  </h1>
+    <h1 class="lineup1" >Phone : </h1>
+    <h1 class="lineup1" >Website : </h1>
+  </div>
+
+   <div class="div2">
+ <h1 class="lineup2" id="data3">Bret</h1> 
+ <h1 id="data4" class="lineup2">Sincere</h1>
+  <h1 id="data5" class="lineup2">9999999999</h1>
+<h1 id="data6" class="lineup2">leannegraham.com</h1>
+</div>
+
+<h1 id="" class="">Company</h1>
+<div class="div3">
+  
+  <h1 class="lineup1" >Name :</h1>
+  <h1 class="lineup1">catchphrase :</h1>
+  <h1 class="lineup1" >bs :  </h1>
+</div>
+
+   <div class="div4">
+  <h1 id="data7" class="lineup2">Romaguera-Crona</h1> 
+  <h1 id="data8" class="lineup2">MUlti-layered client-server neural</h1>
+  <h1 id="data9" class="lineup2">harness real-time e-markets</h1>
+</div>
+    </div>
+  
+    <div class="address1">
+      <h1 style="margin-left: -100px;"  id="">Address:</h1>
+    <div class="div5">
+      
+      <h1 class="lineup3" >Street :</h1> 
+      <h1 class="lineup3" >Suite : </h1>
+      <h1 class="lineup3" >City : </h1>
+      <h1 class="lineup3" >Zipcode :</h1>
+      </div>
+    
+      <div class="div6">
+      <h1 id="data10" class="lineup4">kulas Light</h1>
+     <h1 id="data11" class="lineup4">Apt. 556</h1>
+      <h1 id="data12" class="lineup4">Gwenborough</h1> 
+      <h1 id="data13" class="lineup4">92998-3874</h1>
+    </div>
+    </div>
+
+    <div class="image2">
+      <img class="image2" src="https://www.resortsinbangalore.co.in/puri_large.JPG" alt="">
+    </div>
+
+    <button onclick="dropDown()" class="chat1">Chats </button>
+    <ul id="dropDown" class="chat_up1">
+
+      <div class="down">
+        <h3 id="0" class="chatOn1"  ><h1 class="chatOn2">Chats</h1></a></h3>
+         </div> 
+
+         <button class="chatup_button" onclick="chatUp()"> </button>
+
+
+         <img src="" id="11"  class="img4">
+         <h5 class="chat_up2" id="1"></a></h5>
+          
+        <img src="" id="12" class="image4">
+        <h5 id="2"></h5>
+       <h5></h5>
+
+        <img src="" id="13" class="image4">
+        <h5 id="3"></h5>
+
+        <img src="" id="14" class="image4">
+        <h5 id="4"></h5>
+
+        <img src="" id="15" class="image4">
+        <h5 id="5"></h5>
+
+        <img src="" id="16" class="image4">
+        <h5 id="6" ></a></h5>
+
+        <img src="" id="17" class="image4">
+        <h5 id="7"></a></h5>
+
+        <img src="" id="18" class="image4">
+        <h5 id="8"></a></h5>
+
+        <img src="" id="19" class="image4">
+        <h5 id="9"></a></h5>
+
+       
+    </ul>
+
+    <ul id="chatUp" class="chatsup_button2"> 
+
+      <div class="lorem6">
+      <img id="chatIm" class="chatIm" src="" alt="">
+      <h5 id="2" class="chats_upp">Ervin Howell </h5>
+    </div>
+      <div class="lorem7">
+      <p class="lorem1">Lorem ipsum dolor sit amet consectetur </p>
+      <p class="lorem2">Lorem ipsum dolor sit</p>
+    </div>
+    <div class="lorem8">
+      <p class="lorem3">Lorem ipsum dolor</p>
+      <p class="lorem4">Lorem ipsum</p>
+    </div>
+      <hr style="margin-left: -40px; margin-top: 1px;">
+      <div class="lorem9">
+      <p class="lorem5"></p>
+    </div>
+    </ul>
+   
+  </div>
+</body>
+<script>
+
+
+  var x = 0;
+  
+  function dropDown(){
+      if(x == 0){
+        // document.getElementById("drop").style.display="none";
+          document.getElementById("dropDown").style.display="block";
+          x = 1;
+      }else{
+        // document.getElementById("drop").style.display="block";
+          document.getElementById("dropDown").style.display="none";
+          
+          // document.getElementById("dropUp").innerText.charAt="k"
+  
+          x = 0;
+      }
+  }
+        
+  
+  function dropUp(){
+      if(x == 0){
+          document.getElementById("dropUp").style.display="block";
+          document.getElementById("dropUp").style.marginLeft="-293.5px";
+          x = 1;
+      }else{
+          document.getElementById("dropUp").style.display="none";
+
+          x = 0;
+      }
+  }
+  
+  function chatUp(){
+      if(x == 0){
+          document.getElementById("chatUp").style.display="block";
+          // document.getElementById("dropUp").style.marginLeft="-290px";
+          x = 1;
+      }else{
+          document.getElementById("chatUp").style.display="none";
+
+          x = 0;
+      }
+  }
+
+
+  
+      const myPromise=fetch("https://panorbit.in/api/users.json");
+      myPromise.then(data=>{
+          return data.json()
+      })
+      .then(actualdata=>{
+          console.log(actualdata)
+          let num=actualdata;
+          document.getElementById("chatIm").src=num.users[1].profilepicture;
+       var k=0;
+        for(var i=1;i<10;i++){
+          k++;
+          document.getElementById(k).innerHTML=num.users[i].name;
+        }
+        var j=10;
+        for(var i=1;i<10;i++){
+          j++;
+          document.getElementById(j).src=num.users[i].profilepicture;
+        }
+  
+  
+        var z=20;
+        for(var i=1;i<10;i++){
+          z++;
+          document.getElementById(z).src=num.users[i].profilepicture;
+        }
+  
+        var s=25;
+        for(var i=1;i<10;i++){
+          document.getElementById(s).innerHTML=num.users[i].name;
+          s++;
+        }
+     
+      })
+
+      dataChange1.addEventListener('click',function(){
+        fetch("https://panorbit.in/api/users.json")
+         .then(res=>res.json())
+         .then(actualdata=>{
+          console.log(actualdata)
+          let num=actualdata;
+          document.getElementById("data14").src=num.users[1].profilepicture;
+          document.getElementById("data1").src=num.users[1].profilepicture;
+          document.getElementById("data2").innerHTML=num.users[1].name;
+            document.getElementById("data15").innerHTML=num.users[1].name;
+            document.getElementById("data3").innerHTML=num.users[1].username;
+            document.getElementById("data4").innerHTML=num.users[1].email;
+            document.getElementById("data16").innerHTML=num.users[1].email;
+            document.getElementById("data5").innerHTML=num.users[1].phone;
+            document.getElementById("data6").innerHTML=num.users[1].website;
+
+            document.getElementById("data7").innerHTML=num.users[1].company.name;
+            document.getElementById("data8").innerHTML=num.users[1].company.catchPhrase;
+            document.getElementById("data9").innerHTML=num.users[1].company.bs;
+
+            document.getElementById("data10").innerHTML=num.users[1].address.street;
+            document.getElementById("data11").innerHTML=num.users[1].address.suite;
+            document.getElementById("data12").innerHTML=num.users[1].address.city;
+            document.getElementById("data13").innerHTML=num.users[1].address.zipcode;
+            // document.getElementById("data").innerHTML=num.users[1].name;
+         })
+         
+        })
+    
+  </script>
+</html>
